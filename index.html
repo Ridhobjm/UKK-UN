@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan Faza & Putri</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url(asset/10d54d3d-9909-4f04-be15-1b97d9329fa5.jpeg);">
+    <header>
+        <body class="no-scroll">
+        <button class="music-btn" onclick="toggleMusic()">🎵</button>
+        <img src="asset/buunga-removebg-preview.png" alt="ornamen bunga" class="ornamen-bunga bunga-kanan-atas">
+        <img src="asset/buunga-removebg-preview.png" alt="ornamen bunga" class="ornamen-bunga bunga-kiri-bawah">
+    <video autoplay muted loop>
+        <source src="asset/Cinematic Wedding Video Putri - Faza _ Sony A7Siii A7s3 (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1>Faza & Putri</h1>
+    <p>12 Desember 2025</p>
+    <button id="openInvitationBtn" onclick="openInvitation()">Buka Undangan</button>
+  </header>
+
+  <main id="main">
+    <section class="animate-on-scroll">
+        <img src="asset/buunga-removebg-preview.png" alt="ornamen bunga" class="ornamen-bunga bunga-kanan-atas">
+      <h2>Pengantin</h2>
+      <div class="profile-container">
+        <div class="profile">
+          <img src="asset/Mempelai Pria.jpg" alt="Faza">
+          <p>Faza Ramadhan Alfarizi <br> Putra dari Bapak Ahmad & Ibu Siti</p>
+        </div>
+        <div class="profile">
+          <img src="asset/Mempelai Wanita.jpg" alt="Putri">
+          <p>Putri Anindya Maharani<br> dari Bapak Arif & Ibu Aminah</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote animate-on-scroll">
+      <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri..." (QS. Ar-Rum: 21)</p>
+    </section>
+
+    <section class="animate-on-scroll">
+      <h2>Informasi Acara</h2>
+      <div class="event-grid">
+        <div class="event-box">
+          <h3>Akad Nikah</h3>
+          <p>12 Desember 2025, 08.00 WIB</p>
+          <p>SMKN 2 BANJARMASIN</p>
+        </div>
+        <div class="event-box">
+          <h3>Resepsi</h3>
+          <p>12 Desember 2025, 11.00 WIB</p>
+          <p>Denpom VI/2 Bjm</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="animate-on-scroll">
+      <h2>Lokasi Acara</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.7385568160391!2d114.61760365954801!3d-3.3229037316822283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423fe31430fdb%3A0x8c168a3ea6d9ce96!2sDenpom%20VI%2F2%20Bjm!5e1!3m2!1sid!2sid!4v1749020776446!5m2!1sid!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="animate-on-scroll">
+      <h2>Galeri</h2>
+      <div class="gallery">
+          <img src="asset/Ide pre-wedding menggunakan baju adat Sunda, Jawa… (1).jpeg" alt="Prewedding">
+          <img src="asset/Ide pre-wedding menggunakan baju adat Sunda, Jawa… (2).jpeg" alt="Prewedding">
+          <img src="asset/Ide pre-wedding menggunakan baju adat Sunda, Jawa… (3).jpeg" alt="Prewedding">
+        <img src="asset/Ide pre-wedding menggunakan baju adat Sunda, Jawa… (4).jpeg" alt="Prewedding">
+        <img src="asset/Ide pre-wedding menggunakan baju adat Sunda, Jawa… (5).jpeg" alt="Prewedding">
+        <img src="asset/Ide pre-wedding menggunakan baju adat Sunda, Jawa….jpeg" alt="Prewedding">
+      </div>
+    </section>
+
+    <section class="animate-on-scroll">
+      <h2>Konfirmasi Kehadiran</h2>
+      <form id="rsvpForm">
+        <input type="text" placeholder="Nama Anda" id="nama" required>
+        <select id="jumlah">
+          <option>1 Tamu</option>
+          <option>2 Tamu</option>
+          <option>3 Tamu</option>
+        </select>
+        <select id="kehadiran">
+            <option>Hadir</option>
+            <option>Tidak Hadir</option>
+        </select>
+
+        <h2>Menuju Hari Bahagia</h2>
+        <button type="submit">Kirim</button>
+    </form>
+    <div id="konfirmasiPesan"></div>
+    <h3>Daftar Kehadiran</h3>
+    <ul id="daftarKehadiran"></ul>
+</section>
+
+<section class="animate-on-scroll">
+    <img src="asset/buunga-removebg-preview.png" alt="ornamen bunga" class="ornamen-bunga bunga-kiri-bawah">
+    <div class="countdown" id="countdown"></div>
+</section>
+
+<audio id="bgmusic" loop >
+      <source src="asset/Wedding Nasheed _ Muhammad Al Muqit (English Lyrics).mp3" type="audio/mpeg">
+    </audio>
+    <footer style="text-align:center; padding:2rem 1rem; background-color:rgba(255, 182, 193, 0.2); margin-top:2rem; border-top:2px solid #ffb6c1;">
+        <h3 style="font-family:'Birthstone', cursive; font-size:2rem; color:#d6336c;">Terima Kasih</h3>
+        <p>Atas kehadiran dan doa restu yang diberikan, kami mengucapkan banyak terima kasih.</p>
+        <p>Semoga Allah SWT membalas dengan kebaikan yang berlimpah.</p>
+        <p style="margin-top: 1rem;">Salam hangat,</p>
+        <p><strong>Faza & Putri</strong></p>
+</footer>
+</main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
